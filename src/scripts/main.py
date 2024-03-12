@@ -20,6 +20,9 @@ else:
             # Cria coluna location consoante ao nome do arquivo
 
             file_name = os.path.basename(excel_file)
+
+            df_temp['filename'] = file_name
+
             if 'brasil' in file_name:
                 df_temp['location'] = 'br'
             elif 'france' in file_name:
