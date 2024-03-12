@@ -34,7 +34,6 @@ else:
                 
             df_temp['campaign'] = df_temp['utm_link'].str.extract(r'utm_campaign=(.*)')
             dfs.append(df_temp)
-            print(dfs)
 
         except Exception as e:
             print(f'Erro ao ler o arquivo. {excel_file} : {e}')
